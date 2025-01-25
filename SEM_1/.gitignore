@@ -1,0 +1,36 @@
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+*.so
+*.egg
+*.egg-info
+dist
+build
+*.mo
+*.pot
+*.pot-x
+*.gmo
+*.tgz
+*.zip
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.zip
+*.tar
+
+# include exe files
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+
+
+# include /.vscode
+.vscode
