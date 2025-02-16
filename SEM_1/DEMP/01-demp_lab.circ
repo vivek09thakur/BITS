@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project source="2.7.1" version="1.0">
 This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
-<lib desc="#Wiring" name="0">
-    <tool name="Pin">
-      <a name="width" val="2"/>
-    </tool>
-  </lib>
+<lib desc="#Wiring" name="0"/>
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
@@ -58,19 +54,166 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
   </circuit>
-  <circuit name="01_demp_work">
-    <a name="circuit" val="01_demp_work"/>
+  <circuit name="01-demp-lab">
+    <a name="circuit" val="01-demp-lab"/>
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(640,350)" to="(710,350)"/>
-    <wire from="(410,350)" to="(410,400)"/>
-    <wire from="(410,350)" to="(520,350)"/>
-    <wire from="(520,330)" to="(580,330)"/>
-    <wire from="(520,370)" to="(580,370)"/>
-    <wire from="(520,330)" to="(520,350)"/>
-    <wire from="(520,350)" to="(520,370)"/>
-    <comp lib="0" loc="(410,410)" name="Power"/>
-    <comp lib="1" loc="(640,350)" name="NAND Gate"/>
+    <wire from="(470,380)" to="(560,380)"/>
+    <wire from="(470,380)" to="(470,490)"/>
+    <wire from="(560,360)" to="(620,360)"/>
+    <wire from="(560,400)" to="(620,400)"/>
+    <wire from="(680,380)" to="(780,380)"/>
+    <wire from="(560,360)" to="(560,380)"/>
+    <wire from="(560,380)" to="(560,400)"/>
+    <wire from="(780,380)" to="(790,380)"/>
+    <comp lib="0" loc="(780,380)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(480,490)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(680,380)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+  </circuit>
+  <circuit name="02-demp-lab">
+    <a name="circuit" val="02-demp-lab"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(420,380)" to="(430,380)"/>
+    <wire from="(420,420)" to="(430,420)"/>
+    <wire from="(620,380)" to="(660,380)"/>
+    <wire from="(620,420)" to="(660,420)"/>
+    <wire from="(550,400)" to="(620,400)"/>
+    <wire from="(430,380)" to="(490,380)"/>
+    <wire from="(430,420)" to="(490,420)"/>
+    <wire from="(720,400)" to="(740,400)"/>
+    <wire from="(620,380)" to="(620,400)"/>
+    <wire from="(620,400)" to="(620,420)"/>
+    <comp lib="1" loc="(720,400)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(550,400)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(430,420)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(740,400)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(430,380)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+  </circuit>
+  <circuit name="03-demp-lab">
+    <a name="circuit" val="03-demp-lab"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(470,460)" to="(530,460)"/>
+    <wire from="(380,480)" to="(410,480)"/>
+    <wire from="(520,360)" to="(570,360)"/>
+    <wire from="(630,380)" to="(680,380)"/>
+    <wire from="(380,290)" to="(410,290)"/>
+    <wire from="(380,330)" to="(410,330)"/>
+    <wire from="(380,440)" to="(410,440)"/>
+    <wire from="(470,310)" to="(520,310)"/>
+    <wire from="(530,400)" to="(570,400)"/>
+    <wire from="(380,290)" to="(380,310)"/>
+    <wire from="(380,310)" to="(380,330)"/>
+    <wire from="(380,440)" to="(380,460)"/>
+    <wire from="(380,460)" to="(380,480)"/>
+    <wire from="(300,310)" to="(310,310)"/>
+    <wire from="(530,400)" to="(530,460)"/>
+    <wire from="(520,310)" to="(520,360)"/>
+    <wire from="(310,460)" to="(380,460)"/>
+    <wire from="(310,310)" to="(380,310)"/>
+    <comp lib="0" loc="(310,310)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(470,460)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(470,310)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(630,380)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(680,380)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(310,460)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+  </circuit>
+  <circuit name="04-demp-lab">
+    <a name="circuit" val="04-demp-lab"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(650,360)" to="(650,370)"/>
+    <wire from="(300,400)" to="(300,470)"/>
+    <wire from="(890,380)" to="(950,380)"/>
+    <wire from="(530,300)" to="(590,300)"/>
+    <wire from="(530,450)" to="(590,450)"/>
+    <wire from="(590,360)" to="(650,360)"/>
+    <wire from="(590,400)" to="(650,400)"/>
+    <wire from="(300,280)" to="(470,280)"/>
+    <wire from="(300,470)" to="(470,470)"/>
+    <wire from="(300,280)" to="(300,360)"/>
+    <wire from="(800,360)" to="(800,380)"/>
+    <wire from="(800,380)" to="(800,400)"/>
+    <wire from="(300,360)" to="(340,360)"/>
+    <wire from="(300,400)" to="(340,400)"/>
+    <wire from="(400,380)" to="(440,380)"/>
+    <wire from="(440,320)" to="(470,320)"/>
+    <wire from="(440,430)" to="(470,430)"/>
+    <wire from="(710,380)" to="(800,380)"/>
+    <wire from="(800,400)" to="(830,400)"/>
+    <wire from="(800,360)" to="(830,360)"/>
+    <wire from="(440,380)" to="(440,430)"/>
+    <wire from="(590,300)" to="(590,360)"/>
+    <wire from="(230,360)" to="(300,360)"/>
+    <wire from="(230,400)" to="(300,400)"/>
+    <wire from="(440,320)" to="(440,380)"/>
+    <wire from="(590,400)" to="(590,450)"/>
+    <comp lib="1" loc="(530,300)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(710,380)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(890,380)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(230,360)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(950,380)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(400,380)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(530,450)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(230,400)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
   </circuit>
 </project>

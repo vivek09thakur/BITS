@@ -16,7 +16,7 @@ int getFactorial(int n) {
 int main() {
     int n;
 
-    printf("Enter a number to calculate its factorial: ");
+    printf("Enter a number to calculate its factorial: "); 
     scanf("%d", &n);
 
     int factorial = getFactorial(n);
