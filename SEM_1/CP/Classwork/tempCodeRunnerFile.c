@@ -1,1 +1,0 @@
-d positive, negative or zero
