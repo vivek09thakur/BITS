@@ -7,10 +7,10 @@ int main() {
 
     while (!valid) {
         printf("Do you love me? (yes/yes): ");
-        scanf("%9s", answer); // Read up to 9 characters to avoid overflow
+        scanf("%9s", answer);
 
         if (strcmp(answer, "yes") == 0) {
-            valid = 1; // Exit the loop if "yes" is entered
+            valid = 1;
         } else {
             printf("You can only say yes <3\n");
         }
