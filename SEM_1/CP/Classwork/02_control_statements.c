@@ -6,7 +6,7 @@ int main() {
     int valid = 0;
 
     while (!valid) {
-        printf("Do you love me? (yes/yes): ");
+        printf("Do you love me? (yes/no): ");
         scanf("%9s", answer);
 
         if (strcmp(answer, "yes") == 0) {
